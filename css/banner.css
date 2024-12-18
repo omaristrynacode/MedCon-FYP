@@ -1,0 +1,56 @@
+
+.banner {
+    /* background: url("../img/lady.jpg"); */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: #02131c;
+  }
+  
+  .banner .nav {
+    /* display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 5fr 3fr;
+        grid-template-columns: 5fr 3fr; */
+    padding: 1rem;
+    padding-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .banner .nav .logo {
+    padding-top: 10px;
+    text-transform: uppercase;
+    padding-left: 5rem;
+    color: #fff;
+  }
+  
+  .banner .nav .navigation {
+   margin-right: 100px ;
+  }
+  
+  .banner .nav .navigation ul {
+    list-style-type: none;
+  }
+  
+  .banner .nav .navigation ul li {
+    float: left;
+  }
+  
+  .banner .nav .navigation ul li a {
+    display: block;
+    text-align: center;
+    padding: 14px 14px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+  }
+  .banner .nav .navigation ul li a:hover {
+    color: blue;
+  }
+  .banner .nav .logo h1{
+    font-size: 1.5em !important;
+    font-weight: bold !important;
+  }

@@ -1,0 +1,205 @@
+@import url(/MedCon/css/footer.css);
+@import url(/MedCon/css/banner.css);
+.banner{
+  background-color: transparent !important;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    margin: 0;
+    padding: 0; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  body{
+    background-image: url("../img/earthdark.jpg");
+    background-size:cover !important;
+    background-position: center 30% !important;
+    background-repeat: no-repeat !important;
+  }
+  .login-page {
+        width: 100%;
+        padding: 8% 0 1%;
+        margin: auto;
+      
+         
+  
+    background-color: transparent;
+    color: #fff;
+    height: 100vh;
+      }
+.icon-holder{
+  margin: 10px;
+}
+.icon-holder span{
+margin: 10px;
+}
+.icon-holder span i:hover{
+background-color: blue;
+  cursor: pointer;
+  color: #fff;
+
+}
+.rightside{
+  width: 50%;
+  background-color: #041d2b ;
+  height: 100%  ;
+  background-image: url("../img/heartbeat.jpg");
+  background-size:cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  color: #fff;
+  padding: 45px;
+  font-size: 5rem;
+
+}
+.rightside h1{
+  font-weight:700;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.rightside h1:first-child{
+  margin-bottom: -40px;
+}
+
+
+  .login-form,.register-form{
+    width: 50%;
+    height: 100%;
+    padding: 45px;
+
+  }
+  .register-form{
+width: 100%;
+  }
+  #regform .form{
+    height: fit-content;
+    max-width: 430px;
+  }
+  .register-form .icon-holder{
+    margin-bottom: 20px;
+  }
+  #regform{
+    height: 100%;
+  }
+      .form {
+        display: flex;
+        position: relative;
+        z-index: 1;
+        background: #FFFFFF;
+        max-width: 860px;
+        margin: 0 auto 100px;
+        text-align: center;
+        box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+        /* border-radius: 25px; */
+        height: 60vh  ;
+        color: #02131c;
+      }
+      .form input, select {
+        outline: 0;
+        background: #f2f2f2;
+        width: 80%;
+        border: 0;
+        margin: 0 0 15px;
+        padding: 15px;
+        box-sizing: border-box;
+        font-size: 14px;
+        /* border-radius: 15px; */
+      }
+      .form button{
+        text-transform: capitalize;
+        outline: 0;
+        background: blue;
+        width: 50%;
+        border: 0;
+        font-weight: 600;
+        padding: 7px;
+        color: #FFFFFF;
+        font-size: 14px;
+        -webkit-transition: all 0.3 ease;
+        transition: all 0.3 ease;
+        cursor: pointer;
+        border-radius: 10px;
+        border:2px solid blue;
+
+        }
+      .form button:hover,.form button:active,.form button:focus {
+        background: #ffffff;
+        color: black;
+        border:2px solid blue;
+      }
+      .form .message {
+        margin: 15px 0 0;
+        color: #b3b3b3;
+        font-size: 12px;
+      }
+      .form .message a {
+        color: blue;
+        text-decoration: none;
+      }
+      
+      .container {
+        position: relative;
+        z-index: 1;
+        max-width: 300px;
+        margin: 0 auto;
+      }
+      .container:before, .container:after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+      .container .info {
+        margin: 50px auto;
+        text-align: center;
+      }
+      .container .info h1 {
+        margin: 0 0 15px;
+        padding: 0;
+        font-size: 36px;
+        font-weight: 300;
+        color: #1a1a1a;
+        
+      }
+      .container .info span {
+        color: #4d4d4d;
+        font-size: 12px;
+      }
+      .container .info span a {
+        color: #000000;
+        text-decoration: none;
+      }
+      .container .info span .fa {
+        color: blue;
+      }
+      .error, .error_reg{
+        margin-top: 10px;
+        animation: error 0.5s;
+        background-color: rgb(255, 204, 204);
+        /* outline: 0; */
+        /* width: 100%; */
+        border: 0;
+        padding: 15px;
+        color: red;
+        -webkit-transition: all 0.3 ease;
+        transition: all 0.3 ease;
+        font-weight: 600;
+      }
+      
+      @keyframes error{
+        from{
+          margin-top: -10px;
+          opacity: 0;
+        }
+        to{
+          margin-top: 10px;
+          opacity: 1;
+          
+        }
+      }
+  
+      .footer{
+        padding-top:0px ;
+        background-color: transparent;
+      }
+      /* Horizontal layout styling */
+

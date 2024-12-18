@@ -1,0 +1,150 @@
+/* footer styling  */
+
+::-webkit-scrollbar {
+    width: 12px; 
+    height: 30px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+    border-radius: 6px; 
+    height: 50px;
+  }
+  
+  ::-webkit-scrollbar-corner {
+    background: transparent; 
+    /* make the corner background transparent */
+  }
+  
+  .footer h2, .footer li{
+	color: black !important;
+  }
+  ::-webkit-scrollbar-button {
+    background: transparent;
+    display: none;
+  }
+  ::-webkit-scrollbar-track {
+    background: rgba(91, 91, 91, 0.208);
+  
+  }
+.footer {
+    padding-top: 100px;
+	width: 100%;
+	background: #fff;
+	display: flex;
+    font-weight: bold;
+    bottom: 0;
+    left: 0;
+    margin-top: auto;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: black !important;
+
+} 
+
+.inner-footer {
+	width: 95%;
+	margin: auto;
+	padding: 30px 10px;
+    padding-left: 200px;
+	display: flex;
+	flex-wrap: wrap;
+	box-sizing: border-box;
+	justify-content: center;
+	margin-left: auto;
+}
+
+.footer-items {
+	width: 30%;
+	padding: 10px 20px;
+	box-sizing: border-box;
+}
+
+.footer-items p {
+	color: black;
+	font-size: 16px;
+	text-align: justify;
+	line-height: 25px;
+}
+
+.h2-footer {
+	margin: 10px 0;
+	color: black;
+	font-size: 16px;
+	font-weight: lighter;
+	text-transform: uppercase;
+}
+
+.border {
+	height: 2px;
+	width: 40px;
+border: 1px solid black !important;
+}
+
+.footer ul {
+	list-style: none;
+	color: black !important;
+	font-size: 15px;
+	letter-spacing: 0.5px;
+	padding-left: 0px;
+}
+
+.footer ul a {
+	text-decoration: none;
+	outline: none;
+	color: black !important;
+	transition: 0.3s;
+}
+.footer ul a:hover{
+	color: blue !important;
+}
+
+.footer ul li {
+	margin: 10px 0;
+	height: 25px;
+}
+
+.footer li i {
+	margin-right: 20px;
+	color: black !important;
+}
+
+.footer-bottom {
+	width:100%;
+	padding: 10px;
+    padding-left: 0px;
+	color: black !important;
+	font-size: 12px;
+    text-align: center;
+	border-top: 0.2px inset rgba(255, 255, 255, 0.219);
+    bottom: 0;
+	
+}
+
+/* responsive styling */
+
+@media screen and (max-width:760px) {
+
+	.footer{
+		max-width:100%;
+		justify-content: center;
+	}
+
+	.footer h2{
+		font-size:medium;
+		padding-bottom: 2px;
+	}
+	.footer ul {
+		font-size: 12px;
+	}
+	.footer ul a:hover{
+		color: blue;
+	}
+	
+	.footer-items ul li{
+		max-height: 50px;
+		display:flex;
+		flex-wrap: nowrap;
+		max-width: 100%;
+	}
+}

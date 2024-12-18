@@ -1,0 +1,219 @@
+.content{
+display: block
+}
+.calendar {
+  display: flex;
+  flex-flow: column;
+  padding-top: 30px;
+  margin-left: 80px;
+}
+.calendar .calendar{
+  padding-top: 0px;
+  margin-left: 0px;
+}
+.calendar .header .month-year {
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  padding: 20px 0;
+  margin-right: 90px;
+}
+.calendar .days {
+  display: flex;
+  flex-flow: wrap;
+}
+.calendar .days .day_name {
+  width: calc(95% / 7);
+  
+  padding: 20px;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: bold;
+  color: #818589;
+  color: #121212;
+  background-color: #fff;
+}
+.calendar .days .day_name:nth-child(7) {
+  border: none;
+}
+.calendar .days .day_num {
+  display: flex;
+  flex-flow: column;
+  width: calc(95% / 7);
+  /* border-right: 1px solid #e6e9ea; */
+  /* border-bottom: 1px solid #e6e9ea; */
+  padding: 15px;
+  font-weight: bold;
+  color: #7c878d;
+  cursor: pointer;
+  min-height: 100px;
+}
+.calendar .days .day_num span {
+  display: inline-flex;
+  width: 30px;
+  font-size: 14px;
+}
+.calendar .days .day_num .event {
+  margin-top: 10px;
+  font-weight: 500;
+  font-size: 14px;
+  padding: 3px 6px;
+  border-radius: 4px;
+  background-color: #f7c30d;
+  color: #fff;
+  word-wrap: break-word;
+}
+.calendar .days .day_num .event.green {
+  background-color: #51ce57;
+}
+.calendar .days .day_num .event.blue {
+  background-color: #518fce;
+}
+.calendar .days .day_num .event.red {
+  background-color: #ce5151;
+}
+.calendar .days .day_num:nth-child(7n+1) {
+  border-left: 1px solid #e6e9ea;
+}
+.calendar .days .day_num:nth-child(7n) {
+  border-right: 1px solid #e6e9ea;
+}
+.calendar .days .day_num:nth-last-child(-n+7) {
+  border-bottom: 1px solid #e6e9ea;
+}
+.calendar .days .day_num.selected:nth-child(7n) {
+  border-right: 1px solid #e6e9ea;
+}
+.calendar .days .day_num.ignore:last-child {
+  border-right: 1px solid #e6e9ea;
+}
+.calendar .days .day_num:hover {
+  background-color: #fdfdfd;
+}
+.calendar .days .day_num.ignore {
+  background-color: #505050;
+  color: #ced2d4;
+  cursor: inherit;  
+}
+.calendar .days .day_num.selected {
+  background-color: #f1f2f3;
+  cursor: inherit;
+}
+.day_num{
+  background-color: #121212;
+}
+.alignright{
+  float:  right;
+  
+}
+#left{
+  margin-left: 15px;
+}
+#appt{
+  margin-top: 50px;
+}
+#exampleModalCenter .modal-header{
+  background-color: #d5d5d5;
+  border: 1px solid #fff;
+
+}
+#exampleModalCenter .modal-body{
+  font-weight: lighter;
+}
+#exampleModalCenter .modal-body input{
+  margin-bottom: 10px;
+}
+.footer{
+  background-color: #121212 !important;
+}
+.container {
+  max-width: 800px;
+  margin: auto;
+  background: #fff;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+.containerFeed h2 {
+  text-align: center;
+}
+.containerFeed select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 16px;
+ 
+  border-radius: 5px;
+}
+.star-rating {
+  display: flex;
+  font-size: 80px; /* Bigger stars */
+  justify-content:center;
+  flex-direction: row-reverse;
+}
+.star-rating input {
+  display: none;
+}
+.star-rating label {
+  color: #fff;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+.star-rating input:checked ~ label,
+.star-rating label:hover,
+.star-rating label:hover ~ label {
+  color: gold;
+}
+.containerFeed textarea {
+  width: calc(100% - 50px);
+  height: 100px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  resize: none;
+}
+.feedback-section {
+  display: flex;
+flex-direction: column;}
+.stars-container {
+  flex: 1;
+  margin-right: 10px;
+}
+
+.message-container {
+  flex: 2;
+}
+#feedbackMessage{
+width: 100%;
+height: 300px;
+}
+.submit-btn {
+  width: 70%;
+  background-color: #28a745;
+  color: white;
+  padding: 10px;
+  align-self: center;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.submit-btn:hover {
+  background-color: #218838;
+}
+#appointmentDropdown{
+  color: #fff;
+  background-color: #2e2e2c;
+  border: 1px solid #fff;
+}
+#appointmentDropdown select{
+  color: #fff;
+  background-color: transparent;
+
+}
+#feedbackMessage{
+  color: #fff;
+  background-color: transparent;
+  border: 1px solid #fff;
+}
